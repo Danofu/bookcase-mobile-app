@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Bookcase</string>
+    <!--  Notifications  -->
+    <string name="notification_readers_updating">Updating Readers…</string>
+    <!--  Toasts  -->
+    <string name="toast_read_external_storage_permission">You need grant the permission to this app to upload an image</string>
+    <string name="toast_required_fields">Fields with red stars are required</string>
+    <string name="toast_book_already_exists">Book with that position and shelf number is already exists</string>
+    <string name="toast_read_contacts_permission">You need grant this permission to see readers</string>
+    <string name="toast_phone_call_permission">You need grant call permission for this app to call a reader</string>
+    <string name="toast_readers_updated">Readers updated.</string>
+    <string name="toast_borrowed_book">Book Borrowed</string>
+    <string name="toast_book_returned">Book returned</string>
+    <!--  activity_main.xml  -->
+    <string name="main_book_image">book image</string>
+    <string name="main_add_content_book">Add Book</string>
+    <string name="main_add_content_reader">Add Reader</string>
+    <string name="main_no_content_books">There are no books :(</string>
+    <string name="main_no_content_readers">There are no readers :/</string>
+    <string name="main_books_button">Books</string>
+    <string name="main_readers_button">Readers</string>
+    <string name="main_book_name_label">Name:</string>
+    <string name="main_book_author_label">Author:</string>
+    <string name="main_book_writing_date_label">Writing Date:</string>
+    <string name="main_book_article_link_label">Article on Wiki:</string>
+    <string name="main_no_description">No Description</string>
+    <string name="main_history_text_view">History</string>
+    <string name="main_delete_book_text_view">Delete</string>
+    <string name="main_edit_book_text_view">Edit</string>
+    <string name="main_dialog_message">Are you sure ?</string>
+    <string name="main_dialog_delete">Delete</string>
+    <string name="main_dialog_cancel">Cancel</string>
+    <string name="main_dialog_title">Delete</string>
+    <string name="main_reader_photo">reader photo</string>
+    <string name="main_reader_number">Number:</string>
+    <string name="main_reader_full_name">Full Name:</string>
+    <string name="main_reader_address">Address:</string>
+    <string name="main_reader_email" translatable="false">Email:</string>
+    <string name="main_loader_tip">Loading…</string>
+    <string name="main_reader_edit_text_view">Edit</string>
+    <string name="main_reader_borrowed_books_text_view">Borrowed Books</string>
+    <string name="main_reader_borrow_book_text_view">Borrow Book</string>
+    <!--  activity_edit_book.xml  -->
+    <string name="edit_book_position_label">Position:</string>
+    <string name="edit_book_shelf_label">Shelf:</string>
+    <string name="edit_book_book_name_label">Book Name:</string>
+    <string name="edit_book_book_name_hint">Book name here…</string>
+    <string name="edit_book_author_label">Author Name:</string>
+    <string name="edit_book_author_hint">Author name here…</string>
+    <string name="edit_book_writing_date_label">Writing Date:</string>
+    <string name="edit_book_writing_date_hint">Writing date here…</string>
+    <string name="edit_book_description_label">Short Description:</string>
+    <string name="edit_book_description_hint">Description here…</string>
+    <string name="edit_book_article_link_label">Article Link:</string>
+    <string name="edit_book_article_link_hint">Link here…</string>
+    <string name="edit_book_upload_image_button">Upload image…</string>
+    <string name="edit_book_uploaded_image_tip">Image not uploaded</string>
+    <string name="edit_book_cancel_button">Cancel</string>
+    <string name="edit_book_add_button">Add</string>
+    <string name="edit_book_remove_image_button">Remove</string>
+    <string name="edit_book_save_button">Save</string>
+    <!--  activity_borrow_book.xml  -->
+    <string name="borrow_book_header">Borrow Book for:</string>
+    <string name="borrow_book_take_button">Take</string>
+    <string name="borrow_book_no_free_books">There are no free books left</string>
+    <!--  activity_borrowed_books.xml  -->
+    <string name="borrowed_books_header">Borrowed Books:</string>
+    <string name="borrowed_books_return_button">Return</string>
+    <string name="borrowed_books_no_borrowed_books">Reader didn\'t borrow any book</string>
+    <!--  activity_book_borrow_history.xml  -->
+    <string name="book_borrow_history_position_label">Position:</string>
+    <string name="book_borrow_history_shelf_label">Shelf:</string>
+    <string name="book_borrow_history_status_label">Status:</string>
+    <string name="book_borrow_history_header_label">Book Borrow History:</string>
+    <string name="book_borrow_history_reader_label">Reader:</string>
+    <string name="book_borrow_history_return_date_label">Return Date:</string>
+    <string name="book_borrow_history_borrow_date_label">Borrow Date:</string>
+    <string name="book_borrow_history_planned_return_date_label">Planned Return Date:</string>
+    <string name="book_borrow_history_no_history">No history</string>
+    <string name="book_borrow_history_status_free">Free</string>
+    <string name="book_borrow_history_status_borrowed">Borrowed</string>
+    <!--  Notification channel  -->
+    <string name="main_notification_channel_name" translatable="false">main channel</string>
+    <string name="main_notification_channel_description" translatable="false">main channel with default importance</string>
+</resources>

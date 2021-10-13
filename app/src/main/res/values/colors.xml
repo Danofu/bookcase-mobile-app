@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="link_color">#0645AD</color>
+    <!--  strokes  -->
+    <color name="stroke_edit_text">#EDECE7</color>
+    <color name="stroke_edit_text_required">#CC0000</color>
+    <!--  backgrounds  -->
+    <color name="bg_app">#EFF0EB</color>
+    <color name="bg_image">#D0D3CF</color>
+    <color name="bg_add_book_create_button">#005221</color>
+    <color name="bg_add_book_create_button_pressed">#106B21</color>
+    <color name="bg_button_pressed">#3F54C4</color>
+    <color name="bg_button_enabled">#27357E</color>
+    <color name="bg_button_disabled">#A4BFD9</color>
+    <color name="bg_remove_button">#990033</color>
+    <color name="bg_remove_button_pressed">#E71837</color>
+    <!--  text  -->
+    <color name="text_button_disabled">#E0E0E0</color>
+    <color name="text_edit_text_hint">#a1a4a3</color>
+    <color name="text_action">#27357E</color>
+    <color name="text_action_remove">#990033</color>
+</resources>

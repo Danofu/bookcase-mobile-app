@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danofu.bookcase">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bookcase">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EditBookActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.BookBorrowHistoryActivity" />
+        <activity android:name=".activity.FullScreenImageActivity" />
+        <activity android:name=".activity.BorrowedBooksActivity" />
+        <activity android:name=".activity.BorrowBookActivity" />
+    </application>
+
+</manifest>

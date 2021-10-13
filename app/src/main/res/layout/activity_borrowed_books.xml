@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/borrowedBooksHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/borrowed_books_header"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/borrowedBooksReaderFullNameTexView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="(reader_full_name)"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrowedBooksHeaderTextView"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrowedBooksReaderFullNameTexView">
+
+        <LinearLayout
+            android:id="@+id/contentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/bookWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_content_wrapper"
+                android:padding="11dp"
+                android:visibility="visible"
+                tools:ignore="UselessParent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TableLayout
+                        android:id="@+id/bookInfoWrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.5">
+
+                        <TableRow
+                            android:id="@+id/bookNameWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/bookNameLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight=".7"
+                                android:gravity="end"
+                                android:text="@string/main_book_name_label"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bookName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.3"
+                                android:gravity="start"
+                                android:text="(book_name)"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/bookAuthorWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/bookAuthorLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight=".7"
+                                android:gravity="end"
+                                android:text="@string/main_book_author_label"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bookAuthor"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.3"
+                                android:gravity="start"
+                                android:text="(book_author)"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/bookWritingDateWrapper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/bookWritingDateLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight=".7"
+                                android:gravity="end"
+                                android:text="@string/main_book_writing_date_label"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bookWritingDate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.3"
+                                android:gravity="start"
+                                android:text="(book_writing_date)"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <ImageView
+                        android:id="@+id/bookImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:contentDescription="@string/main_book_image"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_book_image_default"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/descriptionWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue nulla, vehicula at aliquam in, aliquet molestie quam. Aliquam erat volutpat. Vestibulum vulputate mi sit amet lacus fringilla sodales. Maecenas sit amet mauris condimentum, congue sem id, finibus tortor. Fusce vel pharetra augue. Nunc consectetur magna ut arcu tristique imperdiet. Ut sapien risus, commodo quis rhoncus volutpat, mattis iaculis est. Pellentesque et nisl ultricies mi finibus luctus eget a purus. Aenean eget dictum libero, at maximus neque. Maecenas nec placerat diam. Quisque arcu quam, rutrum elementum tortor et, rhoncus finibus felis. Pellentesque ac odio purus. Etiam hendrerit augue sed congue."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/bookArticleLinkWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bookArticleLinkLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text="@string/main_book_article_link_label"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bookArticleLink"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="(book_link)"
+                            android:textColor="@color/black"
+                            android:textColorLink="@color/link_color"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/bookToolsWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/returnBookTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/borrowed_books_return_button"
+                            android:textColor="@color/text_action_remove"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/noBorrowedBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/borrowed_books_no_borrowed_books"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrowedBooksReaderFullNameTexView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
